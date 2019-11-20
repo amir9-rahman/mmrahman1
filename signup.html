@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="htts://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <title>RBX.HIRE</title>
+  
+    
+
+<style type="text/css">
+        body{
+        background-color:#ffffff;
+        }
+        h1{
+          color:#3a3a3a;
+          text-align:center;
+          font-family: 'Black Han Sans', sans-serif;
+          letter-spacing: 6px;
+          font-size: 50px;
+       
+        }
+        row{
+          text-align:center;
+          font-family: arial;
+        }
+       nav{
+         color: white;
+         padding:3px;
+       }
+  
+.footer-basic {
+  padding:40px 0;
+  background-color:#262626;
+  position: relative;
+  bottom:0px;
+  width:100%;
+ 
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:white;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:30px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:75%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:#c9c9c9;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaaaaa;
+  margin-bottom:0;
+}
+ nav li {
+     margin:-3px;
+     padding:2px;
+ }
+.navigation-clean-search {
+  background:#fff;
+  padding-top:.75rem;
+  padding-bottom:.75rem;
+  color:#333;
+  border-radius:0;
+  box-shadow:none;
+  border:none;
+  margin-bottom:0;
+}
+
+@media (min-width:768px) {
+  .navigation-clean-search {
+    padding-top:1rem;
+    padding-bottom:1rem;
+  }
+}
+
+.navigation-clean-search .navbar-brand {
+  font-weight:bold;
+  color:inherit;
+}
+
+.navigation-clean-search .navbar-brand:hover {
+  color:#222;
+}
+
+.navigation-clean-search .navbar-toggler {
+  border-color:#ddd;
+}
+
+.navigation-clean-search .navbar-toggler:hover, .navigation-clean-search .navbar-toggler:focus {
+  background:none;
+}
+
+.navigation-clean-search .navbar-toggler {
+  color:#888;
+}
+
+.navigation-clean-search .navbar-collapse, .navigation-clean-search .form-inline {
+  border-top-color:#ddd;
+}
+
+.navigation-clean-search .navbar-nav a.active, .navigation-clean-search .navbar-nav > .show > a {
+  background:none;
+  box-shadow:none;
+}
+
+.navigation-clean-search.navbar-light .navbar-nav a.active, .navigation-clean-search.navbar-light .navbar-nav a.active:focus, .navigation-clean-search.navbar-light .navbar-nav a.active:hover {
+  color:#8f8f8f;
+  box-shadow:none;
+  background:none;
+  pointer-events:none;
+}
+
+.navigation-clean-search.navbar .navbar-nav .nav-link {
+  padding-left:18px;
+  padding-right:18px;
+}
+
+.navigation-clean-search.navbar-light .navbar-nav .nav-link {
+  color:#465765;
+}
+
+.navigation-clean-search.navbar-light .navbar-nav .nav-link:focus, .navigation-clean-search.navbar-light .navbar-nav .nav-link:hover {
+  color:#37434d !important;
+  background-color:transparent;
+}
+
+.navigation-clean-search .action-button, .navigation-clean-button .action-button:active {
+  background:#56c6c6;
+  border-radius:20px;
+  font-size:inherit;
+  color:#fff !important;
+  box-shadow:none;
+  border:none;
+  text-shadow:none;
+  padding:8px 20px;
+  transition:background-color 0.25s;
+}
+
+.navigation-clean-search .action-button:hover, .navigation-clean-search .action-button:focus {
+  background:#66d7d7;
+}
+
+.navigation-clean-search .form-inline label {
+  color:#ccc;
+}
+
+.navigation-clean-search .form-inline .search-field {
+  background:none;
+  border:none;
+  border-bottom:1px solid transparent;
+  border-radius:0;
+  color:#ccc;
+  box-shadow:none;
+  color:inherit;
+  transition:border-bottom-color 0.3s;
+}
+
+@media (max-width:767px) {
+  .navigation-clean-search .form-inline .search-field {
+    display:inline-block;
+    width:80%;
+  }
+}
+
+.navigation-clean-search .form-inline .search-field:focus {
+  border-bottom:1px solid #ccc;
+}
+
+}
+
+a:hover{
+  text-decoration:none;
+}
+.fa {
+  position:relative;
+  bottom:2px;
+}
+.fa fa-snapchat {
+  font-size:35px;
+}
+.fa {
+  position:relative;
+  bottom:2px;
+}
+.fa fa-snapchat {
+  font-size:35px;
+}
+
+}
+.newsletter-subscribe p {
+  color:#ffffff;
+  line-height:1.5;
+}
+
+.newsletter-subscribe h2 {
+  font-size:24px;
+  font-weight:bold;
+  margin-bottom:25px;
+  line-height:1.5;
+  padding-top:0;
+  margin-top:0;
+  color:#ffffff;
+}
+
+.newsletter-subscribe .intro {
+  font-size:12px;
+  max-width:500px;
+  margin:0 auto 25px;
+}
+
+.newsletter-subscribe .intro p {
+  margin-bottom:35px;
+  color:#ffffff;
+}
+
+.newsletter-subscribe form {
+  justify-content:center;
+}
+
+.newsletter-subscribe form .form-control {
+  background:#3a3a3a;
+  border:none;
+  border-radius:3px;
+  box-shadow:none;
+  outline:none;
+  color:inherit;
+  text-indent:9px;
+  height:45px;
+  margin-right:10px;
+  min-width:250px;
+
+}
+
+.newsletter-subscribe form .btn {
+  padding:16px 32px;
+  border:none;
+  background:none;
+  box-shadow:none;
+  text-shadow:none;
+  opacity:0.9;
+  text-transform:uppercase;
+  font-weight:bold;
+  font-size:13px;
+  letter-spacing:0.4px;
+  line-height:1;
+}
+
+
+}
+
+.newsletter-subscribe form .btn:active {
+  transform:translateY(10px);
+}
+
+.newsletter-subscribe form .btn-secondary {
+  color:#fff;
+  outline:none;
+  border: none;
+  border-radius:8px;
+  margin-top:35px;  
+  padding: 8px;
+}
+
+.register-photo {
+  padding:0px 0;
+  margin: 100px;
+}
+
+
+
+.register-photo .form-container {
+  display:table;
+  max-width:900px;
+  width:95%;
+  margin:0 auto;
+  box-shadow:1px 1px 5px rgba(0,0,0,0.1);
+}
+
+.register-photo form {
+  display:table-cell;
+  width:400px;
+  background-color:#262626;
+  padding:40px 60px;
+ 
+}
+
+@media (max-width:991px) {
+  .register-photo form {
+    padding:40px;
+  }
+}
+
+.register-photo form h2 {
+  font-size:24px;
+  line-height:1.5;
+  margin-bottom:30px;
+  color:#ffffff;
+}
+
+.register-photo form .form-control {
+color:#ffffff;
+background-color: #262626;
+outline: none;
+border:none;
+border-bottom:1px solid #ccc;
+opacity: 0.6;
+}
+
+.register-photo form .form-control:focus{
+border-bottom:1px solid #ccc;
+opacity: 1;
+box-shadow: none;
+}
+
+
+.register-photo form .form-check {
+  font-size:13px;
+  line-height:20px;
+  color: #ffffff;
+}
+
+
+.register-photo form .btn-secondary:hover, .register-photo form .btn-secondary:active {
+ opacity: 1;
+}
+
+.register-photo form .btn-secondary:active {
+  transform:translateY(1px);
+}
+
+.register-photo form .already {
+  display:block;
+  text-align:center;
+  font-size:12px;
+  color:#ffffff;
+  opacity:0.7;
+  text-decoration:none;
+}
+.register-photo form .already:hover{
+  display:block;
+  text-align:center;
+  font-size:12px;
+  color:#ffffff;
+  opacity:1;
+
+}
+
+.form-container{
+        background-color:#3a3a3a;
+
+    }
+.newsletter-subscribe
+{background-color:#262626}
+
+@media (max-width:600px) {
+.newsletter-subscribe{
+  float:left;
+  position:absolute;
+  left:10px;
+}
+.register-photo{
+  float:left;
+  display:table;
+  max-width:900px;
+  width:95%;
+  margin:0 auto;
+  box-shadow:1px 1px 5px rgba(0,0,0,0.1);
+  bottom:255px;
+}
+</style>  
+</head>
+
+<body>
+     <!-- FIRST NAV -->
+     <div>
+        <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search" style=background-color:#262626;>
+            <div class="container"><a class="navbar-brand" href="homefinal.html" style="color:rgb(255,255,255);">RBX.HIRE</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav mr-auto"></ul>
+                    <form class="form-inline ml-auto" target="_self">
+                        <div class="form-group d-flex flex-row align-content-center"><label for="search-field"><i class="fa fa-search" style="color:rgb(255,255,255);"></i></label><input class="form-control search-field" type="search" name="search" placeholder="Search..." autocomplete="on" id="search-field" style="color:rgb(255,255,255);background-color:rgba(255,255,255,0);"></div>
+                    </form>
+                
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="login.html" style="color:#ffffff;">Log In</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="signup.html" style="color:#ffffff;">Sign Up</a></li>
+                    </ul>
+            </div>
+    </div>
+    </nav>
+    </div>
+    <!--end-->
+    <!--start-->
+    <div class="register-photo">
+        <div class="form-container"><div class="newsletter-subscribe" style="width:492.667px;height:500px;padding:40px;margin:0px;">
+    <div class="container">
+        <div class="intro">
+            <h2 class="text-center">Terms of Agreement</h2>
+            <p class="text-center" style="font-size:18px">Please read all the <a href="terms.html">Terms and Conditions</a></li> carefully before clicking the agreement button. By clicking the agreement button, you are bound by these terms. If you do not agree with the terms and condition you may not use our website.</p>
+        </div>
+        <form method="post" class="form-inline">
+          <div class="form-check" style="font-size:20px"><label class="form-check-label"><input class="form-check-input" type="checkbox" name="terms">I agree to the license terms.</label></div>
+        </form>
+    </div>
+</div>
+
+            <form method="post">
+                <h2 class="text-center"><strong>Create</strong> an account.</h2><input class="form-control" type="text" name="email" placeholder="Username" style="margin:0px 0px 15px ;">
+                <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"></div>
+                <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div>
+                <div class="form-group"><input class="form-control" type="password" name="password-repeat" placeholder="Password (repeat)"></div>
+                <div class="form-group">
+                </div>
+                <div class="form-group"><button class="btn btn-secondary btn-block" type="submit">Sign Up</button></div><a href="#" class="already">You already have an account? Login here.</a></form>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- FOOTER -->  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script>
+        window.sr = ScrollReveal();
+       
+        sr.reveal('.register-photo', {
+          duration: 2500,
+          origin:'top'
+        });
+         
+     
+    
+        
+     </script>
+   <div class="footer-basic" style="color:rgb(255,255,255);padding:20px ;">
+        <footer>
+          <!-- SOCIAL MEDIA -->
+            <div class="social"><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram"></i></a><a href="https://www.snapchat.com/"><i class="fa fa-snapchat"></i></a><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter"></i></a><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></div>
+            <ul class="list-inline">
+
+                <li class="list-inline-item"><a href="homefinal.html">Home</a></li>
+                <li class="list-inline-item"><a href="Services.html">Services</a></li>
+                <li class="list-inline-item"><a href="terms.html">Terms</a></li>
+                <li class="list-inline-item"><a href="privacypolicy.html">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">Rbx.Hire © Copyright 2018</p>
+        </footer>
+    </div>
+        </footer>
+        
+        
+ <script>
+    $(function() {
+      // Smooth Scrolling
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+
+    </script>
+
+</body>
+
+</html>
