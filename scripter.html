@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+      
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/solid.css" integrity="sha384-Rw5qeepMFvJVEZdSo1nDQD5B6wX0m7c5Z/pLNvjkB14W6Yki1hKbSEQaX9ffUbWe" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/fontawesome.css" integrity="sha384-GVa9GOgVQgOk+TNYXu7S/InPTfSDTtBalSgkgqQ7sCik56N9ztlkoTr2f/T44oKV" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black+Han+Sans">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+     <title>RBX.HIRE</title>
+   
+    <style type="text/css">
+        .article-list {
+  color:#313437;
+  background-color:#fff;
+}
+
+.article-list p {
+  color:#7d8285;
+}
+
+.article-list h2 {
+  font-weight:bold;
+  margin-bottom:40px;
+  padding-top:40px;
+  color:inherit;
+}
+
+@media (max-width:767px) {
+  .article-list h2 {
+    margin-bottom:25px;
+    padding-top:25px;
+    font-size:24px;
+  }
+}
+
+.article-list .intro {
+  font-size:16px;
+  max-width:500px;
+  margin:0 auto;
+}
+
+.article-list .intro p {
+  margin-bottom:0;
+}
+
+.article-list .articles {
+  padding-bottom:40px;
+}
+
+.article-list .item {
+  padding-top:50px;
+  min-height:425px;
+  text-align:center;
+}
+
+.article-list .item .name {
+  font-weight:bold;
+  font-size:16px;
+  margin-top:20px;
+  color:inherit;
+}
+
+.article-list .item .description {
+  font-size:14px;
+  margin-top:15px;
+  margin-bottom:0;
+}
+
+.article-list .item .action {
+  font-size:24px;
+  width:24px;
+  margin:22px auto 0;
+  line-height:1;
+  display:block;
+  color:#4f86c3;
+  opacity:0.85;
+  transition:opacity 0.2s;
+  text-decoration:none;
+}
+
+.article-list .item .action:hover {
+  opacity:1;
+}
+
+@media (min-width: 768px) {
+  .description {
+    word-wrap:break-word;
+  }
+}
+
+.description {
+  word-wrap:break-word;
+}
+
+.img:hover{
+text-decoration: underline;
+border: 5px black;
+}
+ body{
+        background-color:#ffffff;
+        max-width:100%;
+        text-align:justify;
+        }
+        h1{
+          text-align:center;
+          font-family: 'Black Han Sans', sans-serif;
+          letter-spacing: 6px;
+          font-size:50px;
+        }
+        .row{
+          text-align:center;
+          font-family: arial;
+          margin:0px;
+        }
+       nav{
+         color: white;
+         padding:3px;
+       }
+      .homelink a{
+        color:rgb(0,0,0);
+      }
+      .footer-basic {
+        padding:40px 0;
+        background-color:#262626;
+        position: relative;
+        bottom:0px;
+        width:100%;
+ 
+      }
+
+      .footer-basic ul {
+        padding:0;
+        list-style:none;
+        text-align:center;
+        font-size:18px;
+        line-height:1.6;
+        margin-bottom:0;
+      }
+      
+      .footer-basic li {
+        padding:0 10px;
+      }
+      
+      .footer-basic ul a {
+        color:white;
+        text-decoration:none;
+        opacity:0.8;
+      }
+      
+      .footer-basic ul a:hover {
+        opacity:1;
+      }
+      
+      .footer-basic .social {
+        text-align:center;
+        padding-bottom:25px;
+      }
+      
+      .footer-basic .social > a {
+        font-size:30px;
+        width:40px;
+        height:40px;
+        line-height:40px;
+        display:inline-block;
+        text-align:center;
+        border-radius:75%;
+        border:1px solid #ccc;
+        margin:0 8px;
+        color:#c9c9c9;
+        opacity:0.75;
+      }
+      
+      .footer-basic .social > a:hover {
+        opacity:0.9;
+      }
+      
+      .footer-basic .copyright {
+        margin-top:15px;
+        text-align:center;
+        font-size:13px;
+        color:#aaaaaa;
+        margin-bottom:0;
+      }
+       nav li {
+           margin:-3px;
+           padding:2px;
+       }
+      .navigation-clean-search {
+        background:#fff;
+        padding-top:.75rem;
+        padding-bottom:.75rem;
+        color:#333;
+        border-radius:0;
+        box-shadow:none;
+        border:none;
+        margin-bottom:0;
+      }
+      
+      @media (min-width:768px) {
+        .navigation-clean-search {
+          padding-top:1rem;
+          padding-bottom:1rem;
+        }
+      }
+      
+      .navigation-clean-search .navbar-brand {
+        font-weight:bold;
+        color:inherit;
+        
+      }
+      
+      .navigation-clean-search .navbar-brand:hover {
+        color:#222;
+      }
+      .navigation-clean-search .navbar-toggler {
+        border-color:#ddd;
+      }
+      
+      .navigation-clean-search .navbar-toggler:hover, .navigation-clean-search .navbar-toggler:focus {
+        background:none;
+      }
+      
+      .navigation-clean-search .navbar-toggler {
+        color:#888;
+      }
+      
+      .navigation-clean-search .navbar-collapse, .navigation-clean-search .form-inline {
+        border-top-color:#ddd;
+      }
+      
+      .navigation-clean-search .navbar-nav a.active, .navigation-clean-search .navbar-nav > .show > a {
+        background:none;
+        box-shadow:none;
+      }
+      
+      .navigation-clean-search.navbar-light .navbar-nav a.active, .navigation-clean-search.navbar-light .navbar-nav a.active:focus, .navigation-clean-search.navbar-light .navbar-nav a.active:hover {
+        color:#8f8f8f;
+        box-shadow:none;
+        background:none;
+        pointer-events:none;
+      }
+      
+      .navigation-clean-search.navbar .navbar-nav .nav-link {
+        padding-left:18px;
+        padding-right:18px;
+      }
+      
+      .navigation-clean-search.navbar-light .navbar-nav .nav-link {
+        color:#465765;
+      }
+      
+      .navigation-clean-search.navbar-light .navbar-nav .nav-link:focus, .navigation-clean-search.navbar-light .navbar-nav .nav-link:hover {
+        color:#37434d !important;
+        background-color:transparent;
+      }
+      
+      .navigation-clean-search .action-button, .navigation-clean-button .action-button:active {
+        background:#56c6c6;
+        border-radius:20px;
+        font-size:inherit;
+        color:#fff !important;
+        box-shadow:none;
+        border:none;
+        text-shadow:none;
+        padding:8px 20px;
+        transition:background-color 0.25s;
+      }
+      
+      .navigation-clean-search .action-button:hover, .navigation-clean-search .action-button:focus {
+        background:#66d7d7;
+      }
+      
+      .navigation-clean-search .form-inline label {
+        color:#ccc;
+      }
+      
+      .navigation-clean-search .form-inline .search-field {
+        background:none;
+        border:none;
+        border-bottom:1px solid transparent;
+        border-radius:0;
+        color:#ccc;
+        box-shadow:none;
+        color:inherit;
+        transition:border-bottom-color 0.3s;
+      }
+      
+      @media (max-width:767px) {
+        .navigation-clean-search .form-inline .search-field {
+          display:inline-block;
+          width:80%;
+        }
+      }
+      
+      .navigation-clean-search .form-inline .search-field:focus {
+        border-bottom:1px solid #ccc;
+      }
+      
+      .jumbotron{
+      margin:20px;
+      width:98%;
+      position:absolute;
+      top:190px;
+      opacity:1;
+      }
+      .container-nolink a{
+        color:#3a3a3a;
+        max-width:100%;
+      }
+      .col-md-4:hover{
+        border: 2px solid black;
+        
+      }
+      .card-body{
+          padding:0px;}
+      .avatar {
+          margin:4px;
+      }
+      a:hover{
+        text-decoration:none;
+      }
+      .fa {
+        position:relative;
+        bottom:2px;
+      }
+      .fa fa-snapchat {
+        font-size:35px;
+      }
+      .col-md-4{
+        width:100%;
+        text-align:center;
+      }
+      .col-md-4 a{ 
+        cursor: pointer; 
+      }
+      @media (max-width:767px) {
+        .jumbotron{
+          position: absolute;
+          top:265px;
+          max-width:92%;
+        }
+    
+        .article-list {
+  color:#313437;
+  background-color:#fff;
+}
+
+.article-list p {
+  color:#7d8285;
+}
+
+.article-list h2 {
+  font-weight:bold;
+  margin-bottom:40px;
+  padding-top:40px;
+  color:inherit;
+}
+
+@media (max-width:767px) {
+  .article-list h2 {
+    margin-bottom:25px;
+    padding-top:25px;
+    font-size:24px;
+  }
+}
+
+.article-list .intro {
+  font-size:16px;
+  max-width:500px;
+  margin:0 auto;
+}
+
+.article-list .intro p {
+  margin-bottom:0;
+}
+
+.article-list .articles {
+  padding-bottom:40px;
+}
+
+.article-list .item {
+  padding-top:50px;
+  min-height:425px;
+  text-align:center;
+}
+
+.article-list .item .name {
+  font-weight:bold;
+  font-size:16px;
+  margin-top:20px;
+  color:inherit;
+}
+
+.article-list .item .description {
+  font-size:14px;
+  margin-top:15px;
+  margin-bottom:0;
+}
+
+.article-list .item .action {
+  font-size:24px;
+  width:24px;
+  margin:22px auto 0;
+  line-height:1;
+  display:block;
+  color:#4f86c3;
+  opacity:0.85;
+  transition:opacity 0.2s;
+  text-decoration:none;
+}
+
+.article-list .item .action:hover {
+  opacity:1;
+}
+
+@media (min-width:1206px) {
+  .description {
+word-break: break-all;
+    
+
+  }
+}
+
+.description {
+word-break: break-all;
+
+}
+.description{
+  width:100%;
+}
+
+    </style>
+</head>
+ 
+
+
+<body>
+
+ <!-- FIRST NAV -->
+     <div>
+        <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search" style=background-color:#262626;>
+            <div class="container"><a class="navbar-brand" href="homefinal.html" style="color:rgb(255,255,255);">RBX.HIRE</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav mr-auto"></ul>
+                    <form class="form-inline ml-auto" target="_self">
+                        <div class="form-group d-flex flex-row align-content-center"><label for="search-field"><i class="fa fa-search" style="color:rgb(255,255,255);"></i></label><input class="form-control search-field" type="search" name="search" placeholder="Search..." autocomplete="on" id="search-field" style="color:rgb(255,255,255);background-color:rgba(255,255,255,0);"></div>
+                    </form>
+                
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="login.html" style="color:#ffffff;">Log In</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="signup.html" style="color:#ffffff;">Sign Up</a></li>
+                    </ul>
+              </div>
+            </div>
+         </nav>
+      </div>
+    <!-- SECOND NAV -->
+    <!-- SECOND NAV -->
+    <!-- SECOND NAV -->
+<div class="homelink">
+  <a href="homepage.html">
+<center> <h1>RBX.HIRE</h1></center>
+  </a>
+</div>
+   <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                   
+                   
+    <a onclick="location.href='robux-page.html';"><p class="text-center">Robux</p></a>
+  
+
+
+                </div>
+                <div class="col-md-6"  onclick="location.href='builder.html';">
+                    <p class="text-center">Hire</p>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    <!-- WELCOME MESSAGE -->
+    <div class="article-list">
+        <div class="container">
+            <div class="row articles">
+                <div class="col-sm-6 col-md-3 col-xl-12 item"><a href="#"><img class="img-fluid" src="https://issues.adblockplus.org/raw-attachment/ticket/3888/167x167-01-01.png" style="width:250px;"></a>
+                    <h3 class="name">Scriptor's name</h3>
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.fsssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</p><a href="#"
+                        class="action"><i class="fas fa-arrow-circle-right"></i></a></div>
+                <div class="col-sm-6 col-md-3 col-xl-12 item"><a href="#"><img class="img-fluid" src="https://issues.adblockplus.org/raw-attachment/ticket/3888/167x167-01-01.png" style="width:250px;"></a>
+                    <h3 class="name">Scriptor's name</h3>
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.fsssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</p><a href="#"
+                        class="action"><i class="fas fa-arrow-circle-right"></i></i></a></div>
+                <div class="col-sm-6 col-md-3 col-xl-12 item"><a href="#"><img class="img-fluid" src="https://issues.adblockplus.org/raw-attachment/ticket/3888/167x167-01-01.png" style="width:250px;"></a>
+                    <h3 class="name">Scriptor's name</h3>
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.fsssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</p><a href="#"
+                        class="action"><i class="fas fa-arrow-circle-right"></i></a></div>
+            </div>
+        </div>
+    </div>
+   
+ <!-- FOOTER -->  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+   <div class="footer-basic" style="color:rgb(255,255,255);padding:20px ;">
+       <footer>
+          <!-- SOCIAL MEDIA -->
+            <div class="social"><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram"></i></a><a href="https://www.snapchat.com/"><i class="fa fa-snapchat"></i></a><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter"></i></a><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></div>
+            <ul class="list-inline">
+
+                <li class="list-inline-item"><a href="homefinal.html">Home</a></li>
+                <li class="list-inline-item"><a href="Services.html">Services</a></li>
+                <li class="list-inline-item"><a href="terms.html">Terms</a></li>
+                <li class="list-inline-item"><a href="privacypolicy.html">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">Rbx.Hire © Copyright 2018</p>
+        </footer>
+    </div>
+  </body>
+</html>
